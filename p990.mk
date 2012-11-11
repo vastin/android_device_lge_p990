@@ -22,6 +22,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
 
+# Secure Fake Image
+PRODUCT_COPY_FILES += \
+    privacy/PDroid.jpeg:system/media/PDroid.jpeg
+
 PRODUCT_PACKAGES += \
     lgcpversion
 
