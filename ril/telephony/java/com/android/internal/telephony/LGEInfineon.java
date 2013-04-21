@@ -226,7 +226,15 @@ public class LGEInfineon extends RIL implements CommandsInterface {
 
             /* Directly calculate UTC time using DST Offset */
             int offset = tzoffset*15*60*1000;	// DST corrected
-            long when = dateParser.parse(parceldata).getTime() - offset;
+            // long when = dateParser.parse(parceldata).getTime() - offset;
+
+            /*
+             * For unknown reason, BB (V30A, 1035.21_20121130) already return
+             * UTC time in CTZV/CTZDST/XNITZINFO when use CMCC sim card.
+             * So we needn't offset correction anymore.
+             */
+            long when = dateParser.parse(parceldata).getTime();
+
             Date d = new Date(when);
             response = dateFormatter.format(d);
 
