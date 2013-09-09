@@ -16,7 +16,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 1170259968
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Try to build the kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_p990_defconfig
+TARGET_KERNEL_CONFIG := kowalski_p990_defconfig
 
 #TARGET_PREBUILT_KERNEL := device/lge/p990/kernel
 
