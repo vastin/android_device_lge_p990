@@ -22,6 +22,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/95kowalski:system/etc/init.d/95kowalski \
+    $(LOCAL_PATH)/prebuilt/KowalskiManager.apk:system/app/KowalskiManager.apk \
+    $(LOCAL_PATH)/prebuilt/alsa_amixer:system/xbin/alsa_amixer \
+    $(LOCAL_PATH)/prebuilt/alsa_aplay:system/xbin/alsa_aplay \
+    $(LOCAL_PATH)/prebuilt/alsa_ctl:system/xbin/alsa_ctl \
+    $(LOCAL_PATH)/prebuilt/iwconfig:system/xbin/iwconfig \
+    $(LOCAL_PATH)/prebuilt/iwlist:system/xbin/iwlist \
+    $(LOCAL_PATH)/prebuilt/power.tegra.so:system/lib/hw/power.tegra.so
+
 PRODUCT_PACKAGES += \
     lgcpversion
 
